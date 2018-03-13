@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ly/cpp_primer/cpp_primer_L1/./L1/l1.h
+
+/home/ly/cpp_primer/cpp_primer_L1/./L2/chapter7.h
+
+/home/ly/cpp_primer/cpp_primer_L1/main.cpp
+iostream
+-
+l1.h
+/home/ly/cpp_primer/cpp_primer_L1/l1.h
+chapter7.h
+/home/ly/cpp_primer/cpp_primer_L1/chapter7.h
+

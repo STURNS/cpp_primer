@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ly/cpp_primer/cpp_primer_L1/main.cpp" "/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles/cpp_primer_L1.dir/main.cpp.o"
+  "/home/ly/cpp_primer/cpp_primer_L1/L1/l1.cpp" "/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/L1/CMakeFiles/L1.dir/l1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/L1/CMakeFiles/L1.dir/DependInfo.cmake"
-  "/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/L2/CMakeFiles/L2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

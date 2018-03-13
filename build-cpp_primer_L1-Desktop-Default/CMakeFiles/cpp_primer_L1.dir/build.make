@@ -90,6 +90,8 @@ cpp_primer_L1_EXTERNAL_OBJECTS =
 
 cpp_primer_L1: CMakeFiles/cpp_primer_L1.dir/main.cpp.o
 cpp_primer_L1: CMakeFiles/cpp_primer_L1.dir/build.make
+cpp_primer_L1: L1/libL1.a
+cpp_primer_L1: L2/libL2.a
 cpp_primer_L1: CMakeFiles/cpp_primer_L1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp_primer_L1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_primer_L1.dir/link.txt --verbose=$(VERBOSE)

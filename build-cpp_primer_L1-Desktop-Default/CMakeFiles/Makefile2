@@ -63,10 +63,11 @@ CMAKE_BINARY_DIR = /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default
 # Target rules for target CMakeFiles/cpp_primer_L1.dir
 
 # All Build rule for target.
-CMakeFiles/cpp_primer_L1.dir/all:
+CMakeFiles/cpp_primer_L1.dir/all: L1/CMakeFiles/L1.dir/all
+CMakeFiles/cpp_primer_L1.dir/all: L2/CMakeFiles/L2.dir/all
 	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/depend
 	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles --progress-num=1,2 "Built target cpp_primer_L1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles --progress-num=5,6 "Built target cpp_primer_L1"
 .PHONY : CMakeFiles/cpp_primer_L1.dir/all
 
 # Include target in all.
@@ -76,7 +77,7 @@ all: CMakeFiles/cpp_primer_L1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp_primer_L1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cpp_primer_L1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 0
 .PHONY : CMakeFiles/cpp_primer_L1.dir/rule
@@ -93,6 +94,116 @@ CMakeFiles/cpp_primer_L1.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/cpp_primer_L1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory L1
+
+# Convenience name for "all" pass in the directory.
+L1/all: L1/CMakeFiles/L1.dir/all
+
+.PHONY : L1/all
+
+# Convenience name for "clean" pass in the directory.
+L1/clean: L1/CMakeFiles/L1.dir/clean
+
+.PHONY : L1/clean
+
+# Convenience name for "preinstall" pass in the directory.
+L1/preinstall:
+
+.PHONY : L1/preinstall
+
+#=============================================================================
+# Target rules for target L1/CMakeFiles/L1.dir
+
+# All Build rule for target.
+L1/CMakeFiles/L1.dir/all:
+	$(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/depend
+	$(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles --progress-num=1,2 "Built target L1"
+.PHONY : L1/CMakeFiles/L1.dir/all
+
+# Include target in all.
+all: L1/CMakeFiles/L1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+L1/CMakeFiles/L1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 L1/CMakeFiles/L1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 0
+.PHONY : L1/CMakeFiles/L1.dir/rule
+
+# Convenience name for target.
+L1: L1/CMakeFiles/L1.dir/rule
+
+.PHONY : L1
+
+# clean rule for target.
+L1/CMakeFiles/L1.dir/clean:
+	$(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/clean
+.PHONY : L1/CMakeFiles/L1.dir/clean
+
+# clean rule for target.
+clean: L1/CMakeFiles/L1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory L2
+
+# Convenience name for "all" pass in the directory.
+L2/all: L2/CMakeFiles/L2.dir/all
+
+.PHONY : L2/all
+
+# Convenience name for "clean" pass in the directory.
+L2/clean: L2/CMakeFiles/L2.dir/clean
+
+.PHONY : L2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+L2/preinstall:
+
+.PHONY : L2/preinstall
+
+#=============================================================================
+# Target rules for target L2/CMakeFiles/L2.dir
+
+# All Build rule for target.
+L2/CMakeFiles/L2.dir/all:
+	$(MAKE) -f L2/CMakeFiles/L2.dir/build.make L2/CMakeFiles/L2.dir/depend
+	$(MAKE) -f L2/CMakeFiles/L2.dir/build.make L2/CMakeFiles/L2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles --progress-num=3,4 "Built target L2"
+.PHONY : L2/CMakeFiles/L2.dir/all
+
+# Include target in all.
+all: L2/CMakeFiles/L2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+L2/CMakeFiles/L2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 L2/CMakeFiles/L2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 0
+.PHONY : L2/CMakeFiles/L2.dir/rule
+
+# Convenience name for target.
+L2: L2/CMakeFiles/L2.dir/rule
+
+.PHONY : L2
+
+# clean rule for target.
+L2/CMakeFiles/L2.dir/clean:
+	$(MAKE) -f L2/CMakeFiles/L2.dir/build.make L2/CMakeFiles/L2.dir/clean
+.PHONY : L2/CMakeFiles/L2.dir/clean
+
+# clean rule for target.
+clean: L2/CMakeFiles/L2.dir/clean
 
 .PHONY : clean
 

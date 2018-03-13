@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/L1/CMakeFiles/progress.marks
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f CMakeFiles/Makefile2 L1/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f CMakeFiles/Makefile2 L1/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f CMakeFiles/Makefile2 L1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f CMakeFiles/Makefile2 L1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named cpp_primer_L1
+# Convenience name for target.
+L1/CMakeFiles/L1.dir/rule:
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f CMakeFiles/Makefile2 L1/CMakeFiles/L1.dir/rule
+.PHONY : L1/CMakeFiles/L1.dir/rule
 
-# Build rule for target.
-cpp_primer_L1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpp_primer_L1
-.PHONY : cpp_primer_L1
+# Convenience name for target.
+L1: L1/CMakeFiles/L1.dir/rule
 
-# fast build rule for target.
-cpp_primer_L1/fast:
-	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/build
-.PHONY : cpp_primer_L1/fast
-
-#=============================================================================
-# Target rules for targets named L1
-
-# Build rule for target.
-L1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 L1
 .PHONY : L1
 
 # fast build rule for target.
 L1/fast:
-	$(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/build
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/build
 .PHONY : L1/fast
 
-#=============================================================================
-# Target rules for targets named L2
+l1.o: l1.cpp.o
 
-# Build rule for target.
-L2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 L2
-.PHONY : L2
-
-# fast build rule for target.
-L2/fast:
-	$(MAKE) -f L2/CMakeFiles/L2.dir/build.make L2/CMakeFiles/L2.dir/build
-.PHONY : L2/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : l1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/main.cpp.o
-.PHONY : main.cpp.o
+l1.cpp.o:
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/l1.cpp.o
+.PHONY : l1.cpp.o
 
-main.i: main.cpp.i
+l1.i: l1.cpp.i
 
-.PHONY : main.i
+.PHONY : l1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/main.cpp.i
-.PHONY : main.cpp.i
+l1.cpp.i:
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/l1.cpp.i
+.PHONY : l1.cpp.i
 
-main.s: main.cpp.s
+l1.s: l1.cpp.s
 
-.PHONY : main.s
+.PHONY : l1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/cpp_primer_L1.dir/build.make CMakeFiles/cpp_primer_L1.dir/main.cpp.s
-.PHONY : main.cpp.s
+l1.cpp.s:
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(MAKE) -f L1/CMakeFiles/L1.dir/build.make L1/CMakeFiles/L1.dir/l1.cpp.s
+.PHONY : l1.cpp.s
 
 # Help Target
 help:
@@ -184,12 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cpp_primer_L1"
 	@echo "... L1"
-	@echo "... L2"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... l1.o"
+	@echo "... l1.i"
+	@echo "... l1.s"
 .PHONY : help
 
 
@@ -201,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ly/cpp_primer/build-cpp_primer_L1-Desktop-Default && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

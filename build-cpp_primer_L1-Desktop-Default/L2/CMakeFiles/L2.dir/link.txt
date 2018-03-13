@@ -1,0 +1,2 @@
+/usr/bin/ar qc libL2.a  CMakeFiles/L2.dir/chapter7.cpp.o
+/usr/bin/ranlib libL2.a

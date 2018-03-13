@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/cpp_primer_L1.dir/main.cpp.o  -o cpp_primer_L1 -rdynamic 
+/usr/bin/c++      CMakeFiles/cpp_primer_L1.dir/main.cpp.o  -o cpp_primer_L1 -rdynamic L1/libL1.a L2/libL2.a 
